@@ -11,7 +11,7 @@ public class PersonService {
                 new Person("Петров Петр Петрович", "г. СПБ, ул. Мира 5", "+79992223344", "petrov@mail.ru", 10, 9, 1985),
                 new Person("Сидоров Алексей Сергеевич", "г. Казань, ул. Новая 12", "+79993334455", "sidorov@mail.ru", 25, 9, 1998),
                 new Person("Алексеева Анна Владимировна", "г. Тверь, ул. Садовая 3", "+79994445566", "alexeeva@mail.ru", 3, 12, 2001),
-                new Person("Алексеева Вячеслав Владимировна", "г. Тверь, ул. Садовая 3", "+79994445566", "alexeeva@mail.ru", 3, 12, 2001)
+                new Person("Алексеева Вячеслав Владимировна", "г. Тверь, ул. Садовая 3", "+79994445566", "alexeeva@mail.ru", 3, 12, 2001),
                 new Person("Сидоров Сергей Сергеевич", "г. Казань, ул. Новая 12", "+79993334455", "sidorov@mail.ru", 25, 9, 1998),
                 new Person("Иванов Марат Иванович", "г. Москва, ул. Ленина 1", "+79991112233", "ivanov@mail.ru", 15, 5, 1990),
         };
@@ -58,7 +58,8 @@ public class PersonService {
                 }
             }
         }
-    } public static void findCurrentMonthBirthdays() {
+    }
+    public static void findCurrentMonthBirthdays() {
         int currentMonth = LocalDate.now().getMonthValue();
         System.out.println("\nЛюди, у которых день рождения в текущем месяце (" + currentMonth + "):");
         boolean found = false;
@@ -87,4 +88,3 @@ public class PersonService {
         }
     }
     }
-}
