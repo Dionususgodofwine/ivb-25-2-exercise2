@@ -20,7 +20,7 @@ public class Main {
                 case 2: PersonService.printPeople(); break;
                 case 3: PersonService.groupByMonth(); break;
                 case 4: PersonService.findCurrentMonthBirthdays(); break;
-                case 5: Person.sortByLastName(); break;
+                case 5: PersonService.sortByLastName(); break;
                 default: break cycle;
             }
         }

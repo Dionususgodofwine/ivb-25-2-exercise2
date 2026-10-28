@@ -182,25 +182,6 @@ public class Person {
         else this.birthYear = birthYear;
     }
 
-
-
-    // b. Поиск людей, у которых день рождения в текущем месяце
-
-
     // c. Сортировка по фамилиям по алфавиту (пузырьком)
-    public static void sortByLastName() {
-        for (int i = 0; i < people.length - 1; i++) {
-            for (int j = 0; j < people.length - 1 - i; j++) {
-                if (people[j].getFullName().compareTo(people[j + 1].getFullName()) > 0) {
-                    Person rab = people[j];
-                    people[j] = people[j + 1];
-                    people[j + 1] = rab;
-                }
-            }
-        }
-        System.out.println("\nОтсортированный список по алфавиту:");
-        for (int i = 0; i < people.length; i++) {
-            System.out.println("*" + people[i]);
-        }
-    }
+
 }
