@@ -17,8 +17,8 @@ public class Main {
             int c = (new Scanner(System.in)).nextInt();
             switch (c) {
                 case 1: PersonService.fillPeople(); break;
-                case 2: Person.printPeople(); break;
-                case 3: Person.groupByMonth(); break;
+                case 2: PersonService.printPeople(); break;
+                case 3: PersonService.groupByMonth(); break;
                 case 4: Person.findCurrentMonthBirthdays(); break;
                 case 5: Person.sortByLastName(); break;
                 default: break cycle;

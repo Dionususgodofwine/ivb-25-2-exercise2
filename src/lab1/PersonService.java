@@ -41,5 +41,22 @@ public class PersonService {
             System.out.println(people[i]);
         }
     }
+    public static void groupByMonth() {
+        System.out.println("\nСписок абонентов, сгруппированный по месяцам:");
+        String[] months = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+        for (int m = 1; m <= 12; m++) {
+            boolean hasPeople = false;
+            for (Person p : people) {
+                if (p.getBirthMonth() == m) {
+                    if (!hasPeople) {
+                        System.out.println("--- " + months[m - 1] + " ---");
+                        hasPeople = true;
+                    }
+                    System.out.println("\t" + p);
+                }
+            }
+        }
+    }
     }
 }

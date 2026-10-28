@@ -182,28 +182,7 @@ public class Person {
         else this.birthYear = birthYear;
     }
 
-    // Ввод информации о новых людях с сохранением старых
 
-
-
-    // a. Группировка абонентов по месяцах их дней рождения
-    public static void groupByMonth() {
-        System.out.println("\nСписок абонентов, сгруппированный по месяцам:");
-        String[] months = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
-        for (int m = 1; m <= 12; m++) {
-            boolean hasPeople = false;
-            for (Person p : people) {
-                if (p.getBirthMonth() == m) {
-                    if (!hasPeople) {
-                        System.out.println("--- " + months[m - 1] + " ---");
-                        hasPeople = true;
-                    }
-                    System.out.println("\t" + p);
-                }
-            }
-        }
-    }
 
     // b. Поиск людей, у которых день рождения в текущем месяце
     public static void findCurrentMonthBirthdays() {
