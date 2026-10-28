@@ -1,5 +1,6 @@
 package lab1;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class PersonService {
@@ -56,6 +57,19 @@ public class PersonService {
                     System.out.println("\t" + p);
                 }
             }
+        }
+    } public static void findCurrentMonthBirthdays() {
+        int currentMonth = LocalDate.now().getMonthValue();
+        System.out.println("\nЛюди, у которых день рождения в текущем месяце (" + currentMonth + "):");
+        boolean found = false;
+        for (Person p : people) {
+            if (p.getBirthMonth() == currentMonth) {
+                System.out.println("\t* " + p);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("\tВ этом месяце именинников нет.");
         }
     }
     }

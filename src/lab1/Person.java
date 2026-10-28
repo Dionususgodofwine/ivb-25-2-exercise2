@@ -185,20 +185,7 @@ public class Person {
 
 
     // b. Поиск людей, у которых день рождения в текущем месяце
-    public static void findCurrentMonthBirthdays() {
-        int currentMonth = LocalDate.now().getMonthValue();
-        System.out.println("\nЛюди, у которых день рождения в текущем месяце (" + currentMonth + "):");
-        boolean found = false;
-        for (Person p : people) {
-            if (p.getBirthMonth() == currentMonth) {
-                System.out.println("\t* " + p);
-                found = true;
-            }
-        }
-        if (!found) {
-            System.out.println("\tВ этом месяце именинников нет.");
-        }
-    }
+
 
     // c. Сортировка по фамилиям по алфавиту (пузырьком)
     public static void sortByLastName() {

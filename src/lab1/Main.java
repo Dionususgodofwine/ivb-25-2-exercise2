@@ -19,7 +19,7 @@ public class Main {
                 case 1: PersonService.fillPeople(); break;
                 case 2: PersonService.printPeople(); break;
                 case 3: PersonService.groupByMonth(); break;
-                case 4: Person.findCurrentMonthBirthdays(); break;
+                case 4: PersonService.findCurrentMonthBirthdays(); break;
                 case 5: Person.sortByLastName(); break;
                 default: break cycle;
             }
