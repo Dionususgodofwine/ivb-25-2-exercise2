@@ -185,13 +185,6 @@ public class Person {
     // Ввод информации о новых людях с сохранением старых
 
 
-    // вывод полученной информации
-    public static void printPeople() {
-        System.out.println("\nЗаписная книжка:");
-        for (int i = 0; i < people.length; i++) {
-            System.out.println(people[i]);
-        }
-    }
 
     // a. Группировка абонентов по месяцах их дней рождения
     public static void groupByMonth() {

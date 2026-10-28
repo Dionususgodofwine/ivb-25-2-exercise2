@@ -35,5 +35,11 @@ public class PersonService {
             // Обновляем ссылку на массив
             people = extendedPeople;
         }
+        public static void printPeople() {
+        System.out.println("\nЗаписная книжка:");
+        for (int i = 0; i < people.length; i++) {
+            System.out.println(people[i]);
+        }
+    }
     }
 }
