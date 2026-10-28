@@ -16,7 +16,7 @@ public class Main {
             System.out.print("Выберите пункт меню (1..6) ");
             int c = (new Scanner(System.in)).nextInt();
             switch (c) {
-                case 1: Person.fillPeople(); break;
+                case 1: PersonService.fillPeople(); break;
                 case 2: Person.printPeople(); break;
                 case 3: Person.groupByMonth(); break;
                 case 4: Person.findCurrentMonthBirthdays(); break;
