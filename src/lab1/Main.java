@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //создаем экземпляр класса для работы с массивом людей
-
+        System.out.println("Привет свининки");
         cycle: while (true) {
             System.out.println("1. Заполнить массив");
             System.out.println("2. Распечатать");
